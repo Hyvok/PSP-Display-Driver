@@ -1,0 +1,372 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 13:58:56  July 02, 2013
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		display_driver_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C5T144C8
+set_global_assignment -name TOP_LEVEL_ENTITY display_driver_top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:58:56  JULY 02, 2013"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PACKAGE TQFP
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 144
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name DEVICE_MIGRATION_LIST EP2C5T144C8
+set_location_assignment PIN_3 -to mem_addr[13]
+set_location_assignment PIN_4 -to mem_addr[12]
+set_location_assignment PIN_7 -to mem_addr[11]
+set_location_assignment PIN_8 -to mem_addr[10]
+set_location_assignment PIN_9 -to mem_addr[19]
+set_location_assignment PIN_24 -to disp_green[2]
+set_location_assignment PIN_25 -to disp_green[3]
+set_location_assignment PIN_28 -to disp_green[4]
+set_location_assignment PIN_30 -to disp_green[5]
+set_location_assignment PIN_31 -to disp_green[6]
+set_location_assignment PIN_32 -to disp_green[7]
+set_location_assignment PIN_57 -to disp_green[1]
+set_location_assignment PIN_58 -to disp_green[0]
+set_location_assignment PIN_48 -to disp_blue[7]
+set_location_assignment PIN_47 -to disp_blue[6]
+set_location_assignment PIN_45 -to disp_blue[5]
+set_location_assignment PIN_44 -to disp_blue[4]
+set_location_assignment PIN_43 -to disp_blue[3]
+set_location_assignment PIN_42 -to disp_blue[2]
+set_location_assignment PIN_41 -to disp_blue[1]
+set_location_assignment PIN_40 -to disp_blue[0]
+set_location_assignment PIN_51 -to disp_clk
+set_location_assignment PIN_52 -to disp_en
+set_location_assignment PIN_53 -to disp_hsync
+set_location_assignment PIN_71 -to disp_power
+set_location_assignment PIN_55 -to disp_vsync
+set_location_assignment PIN_97 -to leds[0]
+set_location_assignment PIN_99 -to leds[1]
+set_location_assignment PIN_100 -to leds[2]
+set_location_assignment PIN_59 -to disp_red[7]
+set_location_assignment PIN_60 -to disp_red[6]
+set_location_assignment PIN_63 -to disp_red[5]
+set_location_assignment PIN_64 -to disp_red[4]
+set_location_assignment PIN_65 -to disp_red[3]
+set_location_assignment PIN_67 -to disp_red[2]
+set_location_assignment PIN_69 -to disp_red[1]
+set_location_assignment PIN_70 -to disp_red[0]
+set_location_assignment PIN_73 -to backlight_en
+set_location_assignment PIN_72 -to backlight_pwm
+set_location_assignment PIN_91 -to data_clk
+set_location_assignment PIN_74 -to data_gpio[0]
+set_location_assignment PIN_75 -to data_gpio[1]
+set_location_assignment PIN_94 -to data_in[7]
+set_location_assignment PIN_96 -to data_in[6]
+set_location_assignment PIN_93 -to data_in[5]
+set_location_assignment PIN_92 -to data_in[4]
+set_location_assignment PIN_87 -to data_in[3]
+set_location_assignment PIN_86 -to data_in[2]
+set_location_assignment PIN_79 -to data_in[1]
+set_location_assignment PIN_76 -to data_in[0]
+set_location_assignment PIN_133 -to mem_addr[18]
+set_location_assignment PIN_134 -to mem_addr[17]
+set_location_assignment PIN_135 -to mem_addr[16]
+set_location_assignment PIN_136 -to mem_addr[15]
+set_location_assignment PIN_144 -to mem_addr[14]
+set_location_assignment PIN_132 -to mem_addr[9]
+set_location_assignment PIN_129 -to mem_addr[8]
+set_location_assignment PIN_126 -to mem_addr[7]
+set_location_assignment PIN_125 -to mem_addr[6]
+set_location_assignment PIN_122 -to mem_addr[5]
+set_location_assignment PIN_113 -to mem_addr[4]
+set_location_assignment PIN_112 -to mem_addr[3]
+set_location_assignment PIN_104 -to mem_addr[2]
+set_location_assignment PIN_103 -to mem_addr[1]
+set_location_assignment PIN_101 -to mem_addr[0]
+set_location_assignment PIN_114 -to mem_ce
+set_location_assignment PIN_139 -to mem_io[7]
+set_location_assignment PIN_141 -to mem_io[6]
+set_location_assignment PIN_142 -to mem_io[5]
+set_location_assignment PIN_143 -to mem_io[4]
+set_location_assignment PIN_120 -to mem_io[3]
+set_location_assignment PIN_119 -to mem_io[2]
+set_location_assignment PIN_118 -to mem_io[1]
+set_location_assignment PIN_115 -to mem_io[0]
+set_location_assignment PIN_137 -to mem_oe
+set_location_assignment PIN_121 -to mem_we
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name STRATIX_CONFIGURATION_DEVICE EPCS1
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER backlight_en -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER backlight_pwm -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER data_clk -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER data_gpio[1] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER data_gpio[0] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER data_in[7] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER data_in[6] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER data_in[5] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER data_in[4] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER data_in[3] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER data_in[2] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER data_in[1] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER data_in[0] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_blue[7] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_blue[6] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_blue[5] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_blue[4] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_blue[3] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_blue[2] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_blue[1] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_blue[0] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_clk -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_en -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_green[7] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_green[6] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_green[5] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_green[4] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_green[3] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_green[2] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_green[1] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_green[0] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_hsync -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_power -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_red[7] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_red[6] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_red[5] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_red[4] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_red[3] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_red[2] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_red[1] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_red[0] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER disp_vsync -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER leds[2] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER leds[1] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER leds[0] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[19] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[18] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[17] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[16] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[15] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[14] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[13] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[12] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[11] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[10] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[9] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[8] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[7] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[6] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[5] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[4] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[3] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[2] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[1] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_addr[0] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_ce -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_io[7] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_io[6] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_io[5] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_io[4] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_io[3] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_io[2] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_io[1] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_io[0] -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_oe -section_id All
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER mem_we -section_id All
+set_instance_assignment -name IO_STANDARD "2.5 V" -to backlight_en
+set_instance_assignment -name IO_STANDARD "2.5 V" -to backlight_pwm
+set_instance_assignment -name IO_STANDARD "2.5 V" -to data_clk
+set_instance_assignment -name IO_STANDARD "2.5 V" -to data_gpio[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to data_gpio[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to data_in[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to data_in[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to data_in[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to data_in[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to data_in[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to data_in[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to data_in[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to data_in[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_blue[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_blue[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_blue[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_blue[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_blue[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_blue[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_blue[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_blue[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_clk
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_en
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_green[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_green[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_green[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_green[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_green[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_green[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_green[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_green[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_hsync
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_power
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_red[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_red[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_red[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_red[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_red[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_red[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_red[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_red[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to disp_vsync
+set_instance_assignment -name IO_STANDARD "2.5 V" -to leds[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to leds[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to leds[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[19]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[18]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[17]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[16]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[15]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[14]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[13]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[12]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[11]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[10]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[9]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[8]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_addr[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_ce
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_io[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_io[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_io[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_io[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_io[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_io[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_io[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_io[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_oe
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mem_we
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+set_global_assignment -name USE_SIGNALTAP_FILE display_driver_display_signaltap.stp
+set_global_assignment -name SLD_FILE /home/hyvok/Documents/psp_display_driver/src/display_driver_display_signaltap_auto_stripped.stp
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_instance_assignment -name IO_STANDARD "2.5 V" -to clk
+set_location_assignment PIN_18 -to clk
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS OUTPUT DRIVING AN UNSPECIFIED SIGNAL"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_io[3]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to backlight_en
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to backlight_pwm
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_blue[7]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_blue[6]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_blue[5]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_blue[4]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_blue[3]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_blue[2]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_blue[1]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_blue[0]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_clk
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_en
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_green[7]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_green[6]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_green[5]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_green[4]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_green[3]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_green[2]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_green[1]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_green[0]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_hsync
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_power
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_red[7]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_red[6]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_red[5]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_red[4]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_red[3]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_red[2]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_red[1]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_red[0]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to disp_vsync
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[19]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[18]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[17]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[16]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[15]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[14]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[13]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[12]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[11]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[10]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[9]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[8]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[7]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[6]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[5]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[4]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[3]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[2]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[1]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_addr[0]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_ce
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_io[7]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_io[6]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_io[5]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_io[4]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_io[2]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_io[1]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_io[0]
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_oe
+set_instance_assignment -name CYCLONEII_TERMINATION "SERIES 50 OHMS" -to mem_we
+set_global_assignment -name VHDL_FILE display_driver_altpll_pkg.vhd
+set_global_assignment -name VHDL_FILE display_driver_pkg.vhd
+set_global_assignment -name VHDL_FILE display_driver_top.vhd
+set_global_assignment -name VHDL_FILE display_driver_sfl.vhd
+set_global_assignment -name SIGNALTAP_FILE display_driver_display_signaltap.stp
+set_global_assignment -name VHDL_FILE display_driver_signaltap.vhd
+set_global_assignment -name VHDL_FILE display_driver_altpll.vhd
+set_global_assignment -name VHDL_FILE display_driver.vhd
+set_global_assignment -name SDC_FILE display_driver.sdc
+set_global_assignment -name QIP_FILE display_driver_sfl.qip
+set_global_assignment -name QIP_FILE display_driver_altpll.qip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
