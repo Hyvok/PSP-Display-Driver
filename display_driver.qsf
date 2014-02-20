@@ -362,8 +362,6 @@ set_global_assignment -name VHDL_FILE display_driver_altpll_pkg.vhd
 set_global_assignment -name VHDL_FILE display_driver_pkg.vhd
 set_global_assignment -name VHDL_FILE display_driver_top.vhd
 set_global_assignment -name VHDL_FILE display_driver_sfl.vhd
-set_global_assignment -name SIGNALTAP_FILE display_driver_display_signaltap.stp
-set_global_assignment -name VHDL_FILE display_driver_signaltap.vhd
 set_global_assignment -name VHDL_FILE display_driver_altpll.vhd
 set_global_assignment -name VHDL_FILE display_driver.vhd
 set_global_assignment -name SDC_FILE display_driver.sdc
